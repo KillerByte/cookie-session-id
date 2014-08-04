@@ -22,8 +22,5 @@
     "should": "*",
     "supertest": "*"
   },
-  "license": "MIT",
-  "scripts": {
-    "test": "mocha --require should --reporter spec --bail"
-  }
+  "license": "MIT"
 }

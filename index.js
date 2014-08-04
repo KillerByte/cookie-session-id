@@ -89,9 +89,9 @@ module.exports = function(opts){
 
         if(!(id = cookies.get(name))) {
             id = generateId();
-            sessions[id] = {};
             cookies.set(name, id);
         }
+        if(!sessions[id]) sessions[id] = {};
 
         req.session = sessions[id];
 
